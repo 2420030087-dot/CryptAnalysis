@@ -1,0 +1,28 @@
+{
+  "system_identifier": "PROD-AUTH-CLUSTER-EAST",
+  "version": "4.2.0",
+  "last_audit": "2026-09-30T18:00:00Z",
+  "authorized_admins": [
+    {
+      "id": "ADM-001",
+      "username": "superadmin",
+      "email": "security-core@fileshield.corp",
+      "access_tier": "TIER_0",
+      "ip_whitelist": ["10.0.4.15", "192.168.1.50"],
+      "token_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    },
+    {
+      "id": "ADM-002",
+      "username": "devops_lead",
+      "email": "devops@fileshield.corp",
+      "access_tier": "TIER_1",
+      "ip_whitelist": ["10.0.4.22"],
+      "token_hash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
+    }
+  ],
+  "security_enforcement": {
+    "require_hardware_keys": true,
+    "session_timeout_seconds": 900,
+    "max_failed_attempts": 3
+  }
+}
